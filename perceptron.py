@@ -2,8 +2,9 @@ import numpy as np
 
 class Perceptron:
     def __init__(self, input_size, learning_rate=0.01):
+        np.random.seed(42)
         self.learning_rate = learning_rate
-        self.weights = np.zeros(input_size + 1)
+        self.weights = np.random.uniform(-0.01, 0.01, input_size + 1)
 
     def predict(self, x):
         x_with_bias = np.insert(x, 0, 1)
@@ -11,6 +12,7 @@ class Perceptron:
         return 1 if summation >= 0 else -1  # Función de activación escalón
 
     def train(self, X, y, epochs):
+        print("Learning rate dentro de Perceptron (train):", self.learning_rate)
         errors = []
         for epoch in range(epochs):
             total_error = 0

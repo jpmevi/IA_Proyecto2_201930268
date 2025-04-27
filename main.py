@@ -27,7 +27,7 @@ class PerceptronApp:
 
         self.feature1 = tk.StringVar(value=self.feature_names[0])
         self.feature2 = tk.StringVar(value=self.feature_names[1])
-        self.index1 = tk.StringVar()  # Puede quedar vacío si no se quiere usar
+        self.index1 = tk.StringVar()
         self.index2 = tk.StringVar()
 
         # Configuración de parámetros
@@ -88,6 +88,7 @@ class PerceptronApp:
         X_train, X_test, y_train, y_test, feature_names = load_data(idx1, idx2, self.test_size.get())
 
         perceptron = Perceptron(input_size=2, learning_rate=self.learning_rate.get())
+        print("Tasa de aprendizaje enviada al Perceptron:", self.learning_rate.get())
         errors = perceptron.train(X_train, y_train, self.epochs.get())
 
         # Gráfico de errores
