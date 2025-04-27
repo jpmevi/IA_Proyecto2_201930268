@@ -23,28 +23,22 @@ El perceptrón simple fue propuesto por Frank Rosenblatt en 1958 como un modelo 
 
 Matemáticamente, el perceptrón calcula una combinación lineal de las entradas y luego aplica una función de activación para determinar la clase de salida.
 
-Dado un vector de entrada \( x = (x_1, x_2, \dots, x_n) \) y un vector de pesos \( w = (w_1, w_2, \dots, w_n) \), junto con un sesgo \( w_0 \), la salida del perceptrón se calcula de la siguiente forma:
+Dado un vector de entrada x = (x1, x2, ..., xn) y un vector de pesos w = (w1, w2, ..., wn), junto con un sesgo w0, la salida del perceptrón se calcula de la siguiente forma:
 
-\[
-z = w*0 + \sum*{i=1}^{n} w_i x_i
-\]
+<img width="180" alt="image" src="https://github.com/user-attachments/assets/d920acf7-26d2-4457-923b-3f58312c02eb" />
 
-La salida \( y \) se obtiene aplicando la función de activación tipo escalón o signo:
 
-\[
-y =
-\begin{cases}
-1, & \text{si } z \geq 0 \\
--1, & \text{si } z < 0
-\end{cases}
-\]
+La salida y se obtiene aplicando la función de activación tipo escalón o signo:
+
+<img width="199" alt="image" src="https://github.com/user-attachments/assets/079a1aad-6167-4f6d-854d-0aa8ec8feb9e" />
+
 
 Donde:
 
-- \( x_i \) representa cada una de las entradas del modelo.
-- \( w_i \) es el peso asociado a cada entrada.
-- \( w_0 \) es el sesgo o bias, que permite desplazar la frontera de decisión.
-- \( y \) es la salida predicha por el modelo, que puede ser 1 o -1.
+- xi representa cada una de las entradas del modelo.
+- wi es el peso asociado a cada entrada.
+- w0 es el sesgo o bias, que permite desplazar la frontera de decisión.
+- y es la salida predicha por el modelo, que puede ser 1 o -1.
 
 ---
 
@@ -52,13 +46,8 @@ Donde:
 
 La función de activación utilizada es la función signo o escalón, que es una función no continua, definida como:
 
-\[
-\text{sign}(z) =
-\begin{cases}
-1, & \text{si } z \geq 0 \\
--1, & \text{si } z < 0
-\end{cases}
-\]
+<img width="238" alt="image" src="https://github.com/user-attachments/assets/5a0e1e3b-1ce3-401a-8609-f98912e06728" />
+
 
 Esta función permite tomar una decisión binaria sobre la clase a la que pertenece una muestra, basándose en el valor de la combinación lineal de las entradas.
 
@@ -68,23 +57,18 @@ Esta función permite tomar una decisión binaria sobre la clase a la que perten
 
 El aprendizaje del perceptrón consiste en ajustar los pesos de manera que el modelo pueda clasificar correctamente las muestras del conjunto de entrenamiento.
 
-Dado un conjunto de datos con entradas \( x^{(j)} \) y salidas deseadas \( d^{(j)} \), el modelo calcula la salida \( y^{(j)} \). Si la salida es incorrecta, es decir, si \( y^{(j)} \neq d^{(j)} \), los pesos se actualizan de acuerdo con la siguiente regla:
+Dado un conjunto de datos con entradas x(j) y salidas deseadas d(j), el modelo calcula la salida y(j). Si la salida es incorrecta, es decir, si y(j) != d(j)), los pesos se actualizan de acuerdo con la siguiente regla:
 
-\[
-w_i = w_i + \eta (d^{(j)} - y^{(j)}) x_i
-\]
+<img width="237" alt="image" src="https://github.com/user-attachments/assets/f41417b3-34f0-4a1c-9d26-9259490fc071" />
 
-\[
-w_0 = w_0 + \eta (d^{(j)} - y^{(j)})
-\]
 
 Donde:
 
-- \( \eta \) es la **tasa de aprendizaje**, un número positivo que controla la magnitud de los cambios en los pesos.
-- \( d^{(j)} \) es la salida deseada para la muestra \( j \).
-- \( y^{(j)} \) es la salida calculada por el modelo para la muestra \( j \).
-- \( w_i \) es el peso de la entrada \( i \).
-- \( x_i \) es la entrada correspondiente.
+- η es la **tasa de aprendizaje**, un número positivo que controla la magnitud de los cambios en los pesos.
+- d(j) es la salida deseada para la muestra j.
+- y(j) es la salida calculada por el modelo para la muestra j.
+- wi es el peso de la entrada i.
+- xi es la entrada correspondiente.
 
 La actualización de los pesos tiene como propósito reducir el error cometido por el modelo, de manera que, con el paso de las iteraciones, el perceptrón logre clasificar correctamente la mayor cantidad de muestras posible.
 
@@ -107,13 +91,12 @@ Una vez finalizado el entrenamiento, se evalúa el desempeño del modelo mediant
 
 La fórmula utilizada es la siguiente:
 
-\[
-\text{Exactitud} = \frac{\text{Número de predicciones correctas}}{\text{Total de muestras de prueba}} \times 100
-\]
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/d70cb5ab-777f-46ce-9014-21d8d4eb71df" />
+
 
 Donde:
 
-- Las predicciones correctas son aquellas en las que la salida calculada \( y \) coincide con la salida deseada \( d \).
+- Las predicciones correctas son aquellas en las que la salida calculada y coincide con la salida deseada d.
 - El total de muestras de prueba corresponde a las muestras que no fueron utilizadas en el proceso de entrenamiento.
 
 La exactitud es una medida global del rendimiento del modelo, pero es importante tener presente que no ofrece información detallada sobre el comportamiento en cada clase. Para análisis más completos se podrían incluir otras métricas como precisión, sensibilidad y matriz de confusión, aunque no forman parte de los alcances de este proyecto.
@@ -124,15 +107,13 @@ La exactitud es una medida global del rendimiento del modelo, pero es importante
 
 El perceptrón simple genera una **frontera de decisión lineal** en el espacio de las características seleccionadas. Esta frontera es una línea recta definida por la ecuación:
 
-\[
-w_0 + w_1 x_1 + w_2 x_2 = 0
-\]
+<img width="222" alt="image" src="https://github.com/user-attachments/assets/129c6b78-2215-4bfe-92b0-cbe4f109dd70" />
 
-Al despejar \( x_2 \):
 
-\[
-x_2 = -\frac{w_1}{w_2} x_1 - \frac{w_0}{w_2}
-\]
+Al despejar x2
+
+<img width="190" alt="image" src="https://github.com/user-attachments/assets/52458fe6-f2c1-4a17-8171-4e551e8fac7d" />
+
 
 Esta ecuación describe la recta que divide el espacio de las dos clases. Las muestras que se encuentren a un lado de la recta serán clasificadas como una clase, mientras que las que se encuentren al otro lado serán clasificadas como la otra.
 
