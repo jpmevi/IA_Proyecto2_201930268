@@ -89,7 +89,8 @@ Antes de entrenar el modelo, debes ingresar algunos valores para que la aplicaci
 - **Porcentaje para entrenamiento:**
   Especifica qué cantidad del total de los datos se utilizará para que el modelo aprenda. Lo que quede se usará para probar si el modelo aprendió bien. Por ejemplo, si eliges 70%, el 70% de los datos se usa para aprender y el 30% para evaluar.
 
--- IMAGEN
+<img width="473" alt="image" src="https://github.com/user-attachments/assets/40584dd9-0a5d-487a-8ab5-869e95330f34" />
+
 
 ---
 
@@ -104,7 +105,8 @@ Puedes elegirlas de dos formas:
 
 Si llenas los campos de los índices, estos serán los que se utilizarán, aunque hayas elegido alguna opción en las listas. Si dejas los índices vacíos, se usarán las opciones que seleccionaste en las listas.
 
--- IMAGEN
+<img width="437" alt="image" src="https://github.com/user-attachments/assets/81d60ae2-604b-44f4-ae06-86c8c71f5215" />
+
 
 ---
 
@@ -125,7 +127,8 @@ Después de entrenar el modelo, se mostrarán dos gráficos y un texto con la ex
 Este gráfico te muestra cuántos errores tuvo el modelo durante cada una de las repeticiones o épocas del entrenamiento.
 Si el modelo va aprendiendo bien, la cantidad de errores debería ir bajando con el tiempo.
 
--- IMAGEN
+<img width="613" alt="image" src="https://github.com/user-attachments/assets/8b0912b0-f70e-431c-a861-89a433acf3e4" />
+
 
 ---
 
@@ -140,7 +143,8 @@ Además, verás una línea recta que es la frontera que el modelo aprendió para
 
 En la parte superior del gráfico se muestra el porcentaje de aciertos del modelo, es decir, qué tan bien logró clasificar los datos que no había visto durante el entrenamiento.
 
--- IMAGEN
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/a3155af3-52a5-496f-b679-c0e3df16502b" />
+
 
 ---
 
@@ -154,7 +158,6 @@ El sistema puede mostrar mensajes de error si se ingresan datos incorrectos. Alg
 
 Cuando esto suceda, la aplicación te mostrará un mensaje en la parte de los resultados indicando qué debes corregir.
 
--- IMAGEN
 
 ---
 
