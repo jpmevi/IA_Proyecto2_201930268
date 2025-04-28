@@ -29,15 +29,14 @@ El perceptrón es una red neuronal de una sola neurona que permite resolver prob
 
 El perceptrón calcula la salida mediante la siguiente ecuación:
 
-\[
-y = \text{sign} \left( w*0 + \sum*{i=1}^{n} w_i x_i \right)
-\]
+<img width="245" alt="image" src="https://github.com/user-attachments/assets/0b2d5713-e7e2-4def-9363-eff986d8db2a" />
+
 
 donde:
 
-- \( w_0 \) es el término independiente o sesgo
-- \( w_i \) son los pesos asociados a cada entrada \( x_i \)
-- \( y \) es la salida generada por el perceptrón, la cual toma los valores de 1 o -1
+- w0 es el término independiente o sesgo
+- wi son los pesos asociados a cada entrada xi
+- y es la salida generada por el perceptrón, la cual toma los valores de 1 o -1
 
 La función de activación utilizada es la función signo, que retorna 1 si el resultado es positivo y -1 si es negativo.
 
@@ -45,19 +44,15 @@ La función de activación utilizada es la función signo, que retorna 1 si el r
 
 Durante el entrenamiento, el perceptrón ajusta sus pesos utilizando la siguiente regla de aprendizaje:
 
-\[
-w_j = w_j + \eta (d - y) x_j
-\]
-\[
-w_0 = w_0 + \eta (d - y)
-\]
+<img width="203" alt="image" src="https://github.com/user-attachments/assets/b87968b1-31a8-4288-8520-4b39605c16be" />
+
 
 donde:
 
-- \( \eta \) es la tasa de aprendizaje, un valor positivo configurado por el usuario
-- \( d \) es la etiqueta deseada o valor real de la muestra
-- \( y \) es la salida calculada por el perceptrón
-- \( x_j \) es el valor de la entrada correspondiente
+- η es la tasa de aprendizaje, un valor positivo configurado por el usuario
+- d es la etiqueta deseada o valor real de la muestra
+- y es la salida calculada por el perceptrón
+- xj es el valor de la entrada correspondiente
 
 El proceso de ajuste se repite durante varias iteraciones o épocas, hasta completar el número máximo de épocas definido por el usuario.
 
