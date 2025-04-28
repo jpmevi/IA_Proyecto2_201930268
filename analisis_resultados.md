@@ -32,6 +32,25 @@ Cada uno de estos parámetros fue modificado de manera independiente para observ
 
 Durante esta serie de pruebas, lo que buscaba era observar cómo diferentes valores de la tasa de aprendizaje afectan la manera en que el modelo ajusta los pesos y, por consecuencia, cómo cambia el comportamiento del error y la precisión final alcanzada.
 
+<img width="1005" alt="image" src="https://github.com/user-attachments/assets/c1366824-2131-4c79-985a-5981581d8704" />
+
+<img width="1028" alt="image" src="https://github.com/user-attachments/assets/ca5d63ff-a37b-4b54-96e6-69999aa6ecfe" />
+
+<img width="993" alt="image" src="https://github.com/user-attachments/assets/63217dad-44c4-4a13-a033-ad64dff23bea" />
+
+<img width="987" alt="image" src="https://github.com/user-attachments/assets/96af78d6-696c-4f04-9000-4b9e24c3f948" />
+
+<img width="1034" alt="image" src="https://github.com/user-attachments/assets/9c022fc1-9096-4e20-a4f5-d697a11ad4f7" />
+
+<img width="1024" alt="image" src="https://github.com/user-attachments/assets/496c5ab2-7176-472f-84c4-4b2aa8806340" />
+
+<img width="1027" alt="image" src="https://github.com/user-attachments/assets/b3f145a5-9bb8-4f38-b17b-001b057c013a" />
+
+<img width="1009" alt="image" src="https://github.com/user-attachments/assets/54a7d5bc-d02d-4816-9771-251dab4182e2" />
+
+<img width="1005" alt="image" src="https://github.com/user-attachments/assets/7202f179-f38b-4e9b-b3d3-3ae116074e87" />
+
+
 A continuación muestro una tabla resumen con los resultados aproximados obtenidos en términos de accuracy y algunas observaciones generales sobre cada caso:
 
 | Tasa de Aprendizaje | Accuracy Aproximada | Observación General                                                                                                                                            |
