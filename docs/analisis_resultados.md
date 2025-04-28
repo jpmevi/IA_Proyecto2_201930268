@@ -50,7 +50,6 @@ Durante esta serie de pruebas, lo que buscaba era observar cómo diferentes valo
 
 <img width="1005" alt="image" src="https://github.com/user-attachments/assets/7202f179-f38b-4e9b-b3d3-3ae116074e87" />
 
-
 A continuación muestro una tabla resumen con los resultados aproximados obtenidos en términos de accuracy y algunas observaciones generales sobre cada caso:
 
 | Tasa de Aprendizaje | Accuracy Aproximada | Observación General                                                                                                                                            |
