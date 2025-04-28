@@ -79,6 +79,16 @@ En mis pruebas, el mejor equilibrio entre velocidad de aprendizaje y estabilidad
 
 En esta parte del análisis me enfoqué en entender cuánto tiempo de entrenamiento necesita el modelo para lograr una buena convergencia. Cambié el número de épocas, manteniendo la tasa de aprendizaje fija, para poder observar cómo evoluciona el error a lo largo del proceso.
 
+<img width="992" alt="image" src="https://github.com/user-attachments/assets/072fce02-f242-40be-9f3c-0410c5794f3d" />
+
+<img width="1021" alt="image" src="https://github.com/user-attachments/assets/dd846e0a-ecd2-40ca-8d49-66dd21ce9c7e" />
+
+<img width="1014" alt="image" src="https://github.com/user-attachments/assets/5a122d2f-6673-4850-83fe-303a59baa6e4" />
+
+<img width="1027" alt="image" src="https://github.com/user-attachments/assets/a398e31d-42b3-46b2-a8d2-92c9a02bd160" />
+
+<img width="1004" alt="image" src="https://github.com/user-attachments/assets/1349f832-a910-4edc-988d-1f298a6170dc" />
+
 | Número de Épocas | Tendencia de los Errores                                                                                                                               | Comportamiento observado |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
 | 5                | Alta dispersión, sin reducción clara del error. Las pocas iteraciones no permiten al modelo aprender adecuadamente.                                    |
@@ -104,6 +114,22 @@ Aumentar las épocas permite darle más oportunidades al perceptrón de ajustar 
 - Porcentaje de entrenamiento: 10%, 20%, 30%, 50%
 
 En esta serie de experimentos lo que quise analizar fue cómo influye el tamaño del conjunto de entrenamiento en la capacidad del modelo para aprender y, al mismo tiempo, cómo afecta la cantidad de datos reservados para la validación o prueba.
+
+<img width="1029" alt="image" src="https://github.com/user-attachments/assets/8fc44b5d-ba32-4807-8ff5-905cfcae0377" />
+
+<img width="1006" alt="image" src="https://github.com/user-attachments/assets/2a521218-1b2c-4cf1-8634-a6257b49f091" />
+
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/a572af61-58f6-4b8a-bc83-afff80291e52" />
+
+<img width="1006" alt="image" src="https://github.com/user-attachments/assets/f20e2ea7-1dba-4340-87fe-6b42611003a2" />
+
+<img width="973" alt="image" src="https://github.com/user-attachments/assets/619a7614-66db-415a-ac8d-a9819b57adb6" />
+
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/539b41ba-257c-4fbf-b73e-458ee363c33e" />
+
+<img width="1021" alt="image" src="https://github.com/user-attachments/assets/0e2b0cbd-c48a-4380-8160-50690d9279f6" />
+
+<img width="996" alt="image" src="https://github.com/user-attachments/assets/02fd3a74-3b98-40d9-b0fd-b8cde6628b87" />
 
 | Porcentaje de Entrenamiento | Accuracy Aproximada | Observación                                                                                                                                         |
 | --------------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
